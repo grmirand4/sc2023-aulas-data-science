@@ -1,0 +1,12 @@
+-- Criando um usuário
+CREATE USER 'gabriel_miranda'@'%' IDENTIFIED BY '123456';
+
+-- Criando um banco de dados
+CREATE DATABASE gabriel_miranda_teste;
+
+-- Dar permissão total ao usuário no database
+GRANT ALL PRIVILEGES ON gabriel_miranda_teste.* TO 'gabriel_miranda'@'%';
+
+-- Atualizar permissões
+FLUSH PRIVILEGES;
+
